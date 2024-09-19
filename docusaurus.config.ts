@@ -7,7 +7,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.trophee.net',
+  url: 'https://docs.trophe.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -32,7 +32,11 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+            './src/css/light-theme.css',
+            './src/css/dark-theme.css',
+          ],
         },
       } satisfies Preset.Options,
     ],
@@ -42,19 +46,12 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/logo.png',
     navbar: {
-      title: 'Docs Trophē',
       logo: {
         alt: 'Trophē Logo',
         src: 'img/logo.png',
+        srcDark: 'img/logo_dark.png', // Added logo for dark mode
+        href: 'https://trophe.net',
       },
-      items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
-        },
-      ],
     },
     colorMode: {
       defaultMode: 'light',

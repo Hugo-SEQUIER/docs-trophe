@@ -1,5 +1,5 @@
 :root {
-  --ifm-background-color: #F9F6EE;
+  --ifm-background-color: transparent;
   --ifm-color-primary: #444444;
 }
 
@@ -10,12 +10,10 @@ html[data-navbar='false'] .navbar {
   display: none;
 } */
 html {
-  background-color: var(--ifm-background-color);
   color: var(--ifm-color-primary);
 }
 
 body {
-  background-color: var(--ifm-background-color);
   color: var(--ifm-color-primary);
 }
 
@@ -31,7 +29,6 @@ h1, h2, h3, h4, h5, h6, p, a {
   --ifm-color-primary-light: #F9F6EE !important;
   --ifm-color-primary-lighter: #F9F6EE !important;
   --ifm-color-primary-lightest: #F9F6EE !important;
-  --ifm-background-color: #444444 !important;
   --ifm-navbar-background-color: #444444 !important;
 }
 
@@ -44,5 +41,4 @@ h1, h2, h3, h4, h5, h6, p, a {
   --ifm-color-primary-light: #444444 !important;
   --ifm-color-primary-lighter: #444444 !important;
   --ifm-color-primary-lightest: #444444 !important;
-  --ifm-background-color: #F9F6EE !important;
 }
