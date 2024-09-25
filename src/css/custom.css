@@ -1,6 +1,8 @@
 :root {
   --ifm-background-color: transparent;
   --ifm-color-primary: #444444;
+  --ifm-heading-font-family: "Montserrat", sans-serif !important;
+  --ifm-col-width : 100%;
 }
 
 html[data-navbar='false'] .navbar {
@@ -15,6 +17,10 @@ html {
 
 body {
   color: var(--ifm-color-primary);
+  font-family: --ifm-heading-font-family;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -30,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   --ifm-color-primary-lighter: #F9F6EE !important;
   --ifm-color-primary-lightest: #F9F6EE !important;
   --ifm-navbar-background-color: #444444 !important;
+  --ifm-color-emphasis-200: #F9F6EE !important;
 }
 
 [data-theme='light'] {
@@ -41,4 +48,96 @@ h1, h2, h3, h4, h5, h6, p, a {
   --ifm-color-primary-light: #444444 !important;
   --ifm-color-primary-lighter: #444444 !important;
   --ifm-color-primary-lightest: #444444 !important;
+  --ifm-color-emphasis-200: #444444 !important;
+}
+
+.container.padding-top--md {
+	position: relative;
+}
+
+.container.padding-top--md>div>div:last-child {
+	padding-left: 1rem !important;
+}
+
+.container.padding-top--md>div>div:first-child {
+	padding: 32px 32px 48px 56px !important;
+}
+
+@media screen and (max-width: 550px) {
+	.container.padding-top--md>div>div:first-child {
+		padding: 32px 32px 48px 32px !important;
+	}
+}
+
+a {
+	color: none;
+	font-weight: 400;
+}
+
+
+h1 {
+	font-weight: 400 !important;
+	font-size: 32px !important;
+	margin-top: -16px !important;
+  font-size: 3.9rem !important;
+  letter-spacing: -3.04px;
+  line-height: 90%;
+  margin-bottom: 48px !important;
+  margin-top: 0 !important;
+  padding-bottom: 22px !important;
+  position: relative;
+}
+
+h1.anchor {
+	font-weight: 400 !important;
+	font-size: 32px !important;
+  
+}
+
+h2 {
+	font-weight: 400 !important;
+	font-size: 24px !important;
+}
+
+h2.anchor {
+	font-weight: 400 !important;
+	font-size: 24px !important;
+}
+
+h3 {
+	font-weight: 400 !important;
+	font-size: 20px !important;
+}
+
+h3.anchor {
+	font-weight: 400 !important;
+	font-size: 20px !important;
+}
+
+h4 {
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+
+h4.anchor {
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+
+p {
+	font-size: 16px !important;
+	font-weight: 400 !important;
+}
+
+.breadcrumbs {
+  margin-bottom: 46px !important;
+}
+
+.col{
+  flex-basis: var(--ifm-col-width);
+  margin-left: 0;
+}
+
+.theme-doc-toc-desktop {
+  margin-top: 220.163px;
 }
