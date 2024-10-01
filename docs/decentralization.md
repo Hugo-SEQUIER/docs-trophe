@@ -34,7 +34,7 @@ Our mission is to empower everyone with AI, thereby reducing technological inequ
 
 ## The Importance of Decentralizing AI
 
-The decentralization of AI is a cause I deeply care about. Witnessing the vast capabilities of AI today, especially tools like ChatGPT, I fear a future where AI becomes accessible—or even available—only through large private corporations. Achieving true decentralization also means decentralizing computing power. Training models like GPT requires immense financial resources to access a multitude of GPUs (often H100s costing around \$30k each). Due to their high cost and limited availability (with delivery times exceeding six months), individuals and young startups lack the necessary tools to compete with major enterprises. Decentralization addresses this disparity by making powerful AI tools more accessible and affordable, fostering innovation and competition across the board.
+The decentralization of AI is a cause we deeply care about. Witnessing the vast capabilities of AI today, we fear a future where AI becomes accessible — or even available — only through large private corporations. Achieving true decentralization also means decentralizing computing power. Training models like GPT requires immense financial resources to access a multitude of GPUs (often H100s costing around \$30k each). Due to their high cost and limited availability (with delivery times exceeding six months), individuals and young startups lack the necessary tools to compete with major enterprises. Decentralization addresses this disparity by making powerful AI tools more accessible and affordable, fostering innovation and competition across the board.
 
 ## Future Directions
 

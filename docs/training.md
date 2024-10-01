@@ -6,6 +6,8 @@ hidden: false
 
 # Training
 
+<img src="/img/training/Solution.png" alt="Training" />
+
 ## Virtual Machine Connection
 
 Users can effortlessly connect to a virtual machine powered by a decentralized network of graphics cards. This setup ensures scalable and efficient computational resources, enabling high-performance training processes.
@@ -22,10 +24,6 @@ Our platform supports the training of large language models (LLMs) using framewo
 
 Transparency and traceability are paramount in our training process. Each step of the training workflow is meticulously recorded and stored on a blockchain. This immutable ledger ensures that all actions are verifiable and auditable, fostering trust and accountability throughout the model development lifecycle.
 
-## Model Storage
-
-Upon completion of the training process, the finalized model is securely saved to a user-specific address. Additionally, the model is made accessible outside the application via the [Hugging Face Hub](https://huggingface.co), allowing for easy integration and deployment across different environments and applications.
-
 ### Metadata Storage
 
 Each training request logs essential metadata, including:
@@ -39,6 +37,9 @@ Each training request logs essential metadata, including:
 - **Theme of Training:** The primary focus or domain of the training process (e.g., natural language processing, image recognition).
 - **Time Training:** The duration taken to train the model.
 - **Sender Address:** The address initiating the training request.
+## Model Storage
+
+Upon completion of the training process, the finalized model is securely saved to a user-specific address. Additionally, the model is made accessible outside the application via the [Hugging Face Hub](https://huggingface.co), allowing for easy integration and deployment across different environments and applications.
 
 ## Customizable Python Script
 

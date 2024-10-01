@@ -6,9 +6,9 @@ hidden: false
 
 ## Vision
 
-At Trophe, our vision is to seamlessly integrate advanced artificial intelligence with blockchain technology to create a universally accessible platform. We strive to democratize AI by providing an intuitive and flexible interface that caters to users of all technical backgrounds. By harnessing the power of blockchain, we ensure transparency, security, and decentralization, empowering individuals and businesses to leverage AI without barriers.
+At Trophē, our vision is to seamlessly integrate advanced artificial intelligence with blockchain technology to create a universally accessible platform. We strive to democratize AI by providing an intuitive and flexible interface that caters to users of all technical backgrounds. By harnessing the power of blockchain, we ensure transparency, security, and decentralization, empowering individuals and businesses to leverage AI without barriers.
 
-Our commitment is to build a robust cloud infrastructure that serves as the backbone for innovative AI applications. We envision a future where cutting-edge AI tools are readily available to everyone, fostering an inclusive and equitable technological landscape. Through this integration, Trophe aims to drive a new era of innovation, where AI advancements are accessible, reliable, and beneficial for society as a whole.
+Our commitment is to build a robust cloud infrastructure that serves as the backbone for innovative AI applications. We envision a future where cutting-edge AI tools are readily available to everyone, fostering an inclusive and equitable technological landscape. Through this integration, Trophē aims to drive a new era of innovation, where AI advancements are accessible, reliable, and beneficial for society as a whole.
 
 ## Objectives
 
@@ -20,6 +20,6 @@ Our commitment is to build a robust cloud infrastructure that serves as the back
 
 - **Security and Transparency:** Implement robust security measures and transparent protocols to protect user data and foster trust within the platform.
 
-- **Community Empowerment:** Cultivate a vibrant community of developers, entrepreneurs, and enthusiasts who contribute to and benefit from the Trophe ecosystem, driving continuous innovation and improvement.
+- **Community Empowerment:** Cultivate a vibrant community of developers, entrepreneurs, and enthusiasts who contribute to and benefit from the Trophē ecosystem, driving continuous innovation and improvement.
 
 - **Sustainable Innovation:** Focus on creating sustainable technological solutions that not only advance AI and blockchain capabilities but also consider the social and economic impacts on the broader society.

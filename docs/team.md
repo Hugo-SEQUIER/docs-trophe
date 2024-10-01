@@ -8,7 +8,7 @@ hidden: false
 
 ## Meet the Founder
 
-Hello! My name is Hugo SEQUIER, a 23-year-old French student based in Paris. I am currently working as a Data Scientist apprentice in the construction industry. My passion for new technologies drives me to contribute to the ongoing revolution within this ever-evolving ecosystem.
+Hello! My name is <a href="https://linktr.ee/sequierh" target="_blank">Hugo SEQUIER</a>, a 23-year-old French student based in Paris. I am currently working as a Data Scientist apprentice in the construction industry. My passion for new technologies drives me to contribute to the ongoing revolution within this ever-evolving ecosystem.
 
 ## About Trophē
 

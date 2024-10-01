@@ -6,6 +6,8 @@ hidden: false
 
 # Inference
 
+<img src="/img/inference/Solution.png" alt="Inference" />
+
 ## Overview
 
 Inference is the process of using a trained model to make predictions or generate responses based on new input data. Our platform provides flexible and efficient ways to perform inference, ensuring seamless integration and real-time interactions. You can interact with your models through two primary methods: **API Access** and **Chatbot**.
