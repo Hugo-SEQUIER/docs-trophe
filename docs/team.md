@@ -16,7 +16,7 @@ I am the sole contributor to the Trophē project, dedicating my time and efforts
 
 ## My Journey
 
-In 2021, I discovered cryptocurrencies from a builder's perspective, learning to use Solidity for smart contract development. However, I decided to refocus on my studies and the themes of AI to develop my skills and specialize in this field. I revisited blockchain technology in November 2023, adding a financial perspective to my understanding.
+In 2021, I discovered cryptocurrencies from a builder's perspective through CryptoZombie, learning to use Solidity for smart contract development. However, I decided to set aside this pursuit and refocus on my studies and the field of AI to develop my skills and specialize in this area. This pivot was driven by the slow growth of the blockchain job market in France, making it challenging to find work-study opportunities in the field. Consequently, I chose to pursue a professional path in AI, a rapidly developing and highly attractive sector in France that aligns with my interests. I revisited blockchain technology in November 2023, adding a financial perspective to my understanding.
 
 Since April 2024, I have been working on the Trophē project, merging my expertise in AI and blockchain to create innovative solutions. My enthusiasm for technology extends beyond AI and data science. I have a strong interest in blockchain technology, which I believe has immense potential to transform various sectors. Blockchain goes beyond cryptocurrencies; it offers robust solutions for securing transactions, ensuring data traceability, and creating decentralized computing networks, among other applications.
 
