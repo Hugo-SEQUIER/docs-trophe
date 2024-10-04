@@ -190,3 +190,7 @@ div.col.col--3 {
 .clean-btn {
   display: none;
 }
+
+.clean-btn:hover {
+  color: var(--ifm-navbar-background-color);
+}
