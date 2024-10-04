@@ -3,10 +3,21 @@ sidebar_position: 5
 title: "Inference"
 hidden: false
 ---
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Inference
 
-<img src="/img/inference/Solution.png" alt="Inference" />
+<center>
+<ThemedImage
+    alt="Inference"
+    sources={{
+        light: useBaseUrl('/img/inference/3.png'),
+        dark: useBaseUrl('/img/inference/4.png'),
+    }}
+    style={{width: 600}}
+    />
+</center>
 
 ## Overview
 

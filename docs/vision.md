@@ -4,7 +4,7 @@ title: "Vision & Objectives"
 hidden: false
 ---
 
-## Vision
+# Vision & Objectives
 
 At Trophē, our vision is to seamlessly integrate advanced artificial intelligence with blockchain technology to create a universally accessible platform. We strive to democratize AI by providing an intuitive and flexible interface that caters to users of all technical backgrounds. By harnessing the power of blockchain, we ensure transparency, security, and decentralization, empowering individuals and businesses to leverage AI without barriers.
 

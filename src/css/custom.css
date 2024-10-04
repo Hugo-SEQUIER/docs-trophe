@@ -136,6 +136,9 @@ p {
 .col{
   flex-basis: var(--ifm-col-width);
   margin-left: 0;
+  padding: 0 !important;
+  flex-basis: 100% !important;
+  max-width: 100% !important;
 }
 
 .theme-doc-toc-desktop {
@@ -152,4 +155,38 @@ p {
 
 .sidebar-title-item:not(:first-child) {
   margin-top: 1rem;
+}
+
+.footer {
+  background-color: var(--ifm-navbar-background-color);
+  color: var(--ifm-color-primary);
+  padding: 1rem 0;
+}
+
+.footer-link-item {
+  color: var(--ifm-color-primary);
+}
+
+header >h1{
+  border-bottom: 1px dashed var(--ifm-color-primary);
+}
+
+/* Override the max-width from node_modules */
+@media (min-width: 997px) {
+    body .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+        max-width: 100% !important;
+    }
+}
+
+.sidebar-title-item {
+  border-bottom: 1px dashed var(--ifm-color-primary);
+  border-top: 1px dashed var(--ifm-color-primary);
+}
+
+div.col.col--3 {
+  display: none;
+}
+
+.clean-btn {
+  display: none;
 }

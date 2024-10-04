@@ -3,10 +3,22 @@ sidebar_position: 4
 title: "Training"
 hidden: false
 ---
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Training
 
-<img src="/img/training/Solution.png" alt="Training" />
+<center>
+<ThemedImage
+    alt="Training"
+    sources={{
+        light: useBaseUrl('/img/training/1.png'),
+        dark: useBaseUrl('/img/training/2.png'),
+    }}
+    style={{width: 600}}
+    />
+</center>
+
 
 ## Virtual Machine Connection
 

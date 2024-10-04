@@ -58,6 +58,11 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
+    footer: {
+      style: 'dark',
+      links: [],
+      copyright: `© ${new Date().getFullYear()} Trophē. Documentation built with Docusaurus.`,
+    },
   },
 
 };
