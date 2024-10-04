@@ -18,7 +18,7 @@
     background-color: var(--ifm-color-primary-dark);
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1190px) {
     .hideOnMobile {
         display: none !important;
     }

@@ -178,6 +178,12 @@ header >h1{
     }
 }
 
+@media (min-width: 997px) {
+  body .docItemCol_VOVn {
+      max-width: 100% !important;
+  }
+}
+
 .sidebar-title-item {
   border-bottom: 1px dashed var(--ifm-color-primary);
   border-top: 1px dashed var(--ifm-color-primary);
