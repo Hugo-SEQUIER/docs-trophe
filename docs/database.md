@@ -8,7 +8,7 @@ hidden: false
 
 ## Irys: A Programmable Datachain
 
-Irys is the first Layer 1 (L1) programmable datachain designed to optimize both data storage and execution. By integrating storage and execution, Irys enhances the utility of blockspace, enabling a broader spectrum of web services to operate on-chain—services that are currently not feasible.
+Irys is the first Layer 1 (L1) programmable datachain designed to optimize both data storage and execution. By integrating storage and execution, Irys enhances the utility of blockspace, enabling a broader spectrum of web services to operate on-chain-services that are currently not feasible.
 
 ### Key Features of Irys
 
