@@ -21,43 +21,31 @@ Irys is the first Layer 1 (L1) programmable datachain designed to optimize both 
 
 ### Key Management
 
-To store data on Irys, a private key is required. At Trophē, we employ a user-centric approach to key management that prioritizes security and user control:
+To provide a seamless and user-friendly experience akin to Web2 applications, we have implemented a key management system that stores users' private keys securely. This approach eliminates the need for users to sign each interaction manually, enhancing convenience while maintaining security. However, storing private keys introduces certain responsibilities and risks, which we address through robust security measures and clear usage policies.
 
-1. **User Secret Generation:** When a user creates a new account, we generate a unique keypair for them. The public key is stored in our database, associated with the user's account.
-
-2. **Private Key Handling:** The private key is never stored on our servers. Instead, it's managed client-side using the following approach:
-
-   a. **Initial Key Provision:** Upon account creation or first login, the user is provided with their private key and instructed to store it securely offline (e.g., in a password manager or secure physical location).
+1. **User Secret Generation:** When a user creates a new account, we generate a unique keypair for them. The keypair consists of a public key and a private key.
    
-   b. **Session-based Key Usage:** When the user logs in, they are prompted to enter their private key in a secure input field. This key is then:
-      - Stored in the browser's memory (JavaScript runtime) for the duration of the session.
-      - Never sent to the server or stored in persistent browser storage (cookies, localStorage, etc.).
-      - Cleared from memory when the user logs out or the session expires.
-
-   c. **Key Input Security:** To enhance security during key input, we implement several measures:
-      - Custom Input Field: We utilize a specially designed input field that masks the private key, preventing it from being visible on the screen.
-      - Encrypted Communication: All communication between the client and our servers is encrypted using HTTPS. This ensures that the private key and other sensitive data remain secure during transmission.
-
-   These security measures work together to provide a robust defense against various attack vectors, helping to keep our users' private keys safe and secure.
-
-3. **Data Encryption and Decryption:** 
-   - Encryption: Data is encrypted using the public key associated with the user's account. This can be done on either the client-side or server-side, as the public key is not sensitive information.
-   - Decryption: Decryption occurs exclusively on the client-side using the private key stored in memory. Only the owner of the private key can decrypt the data, ensuring that sensitive information remains protected even if intercepted during transmission or storage.
-
-4. **Key Recovery:**
-   To ensure users can recover their private keys in case of loss, we implement a secure key recovery mechanism:
-   - During account creation, we generate a recovery phrase (mnemonic) from the private key.
-   - This mnemonic is presented to the user with clear instructions to store it securely offline.
-   - Users are strongly advised to write down the mnemonic and keep it in a safe place, separate from their usual digital storage.
-   - The mnemonic is never stored on our servers, maintaining the user's sole control over their private key.
-
-5. **Session Management:**
-   To enhance security during active sessions, we implement the following measures:
-   - Secure session timeouts: After a period of inactivity, the session automatically expires, requiring re-authentication.
-   - Clear logout functionality: A prominent logout button is provided, which, when clicked, immediately wipes the private key from memory.
-   - Automatic logout: When the user closes the tab or exits the browser, the session is terminated, and the private key is cleared from memory.
-
-These security features work in tandem to protect user private keys and minimize the risk of unauthorized access.
+2. **Encryption and Storage:**
+   
+   a. **Public Key Encryption:** The public key is encrypted using the user's private key. This ensures that the public key remains secure and is only accessible to authorized processes.
+   
+   b. **Private Key Encryption:** The private key is encrypted using the application's secret key. This encryption process ensures that even if the database is compromised, the private keys remain protected.
+   
+   c. **Database Storage:** Both the encrypted public key and the encrypted private key are stored securely in our database. Access to these keys is tightly controlled and monitored to prevent unauthorized usage.
+   
+3. **Private Key Handling:**
+   
+   - **Access Control:** The encrypted private key is decrypted server-side using the application secret when necessary for authorized operations. This allows the system to manage keys without exposing them to the client-side, enhancing security.
+   
+   - **Secure Transmission:** All communications involving key operations are conducted over encrypted channels (HTTPS), ensuring that keys are not exposed during transmission.
+   
+   - **Memory Management:** Private keys are handled in memory securely and are not stored in any persistent storage on the server beyond their encrypted form in the database.
+   
+4. **Data Encryption and Decryption:** 
+   - **Encryption:** Data is encrypted using the user's public key. This can be performed either on the client-side or server-side, leveraging the non-sensitive nature of the public key.
+   - **Decryption:** Decryption occurs on the server-side using the decrypted private key. Only the system, authenticated through the application's secret, can decrypt the data, ensuring that sensitive information remains protected.
+   
+These enhanced key management practices ensure that user keys are securely generated, stored, and managed, providing a robust defense against various security threats while maintaining the convenience expected from modern Web2 applications.
 
 ### Retrieving Metadata
 
@@ -123,5 +111,6 @@ By integrating Irys and Supabase, we combine the strengths of blockchain-based d
 
 ## Conclusion
 
-Our database strategy utilizes Irys for efficient and programmable on-chain metadata storage and Supabase for robust authentication and user management. This combination ensures that our platform is both secure and scalable, capable of supporting innovative applications and providing a solid foundation for future growth.
+Our database strategy utilizes Irys for efficient and programmable on-chain metadata storage and Supabase for robust authentication and user management. By storing users' private keys securely within our system, we provide a Web2-like experience that eliminates the need for manual signing of interactions, enhancing convenience without compromising security. This combination ensures that our platform is both secure and scalable, capable of supporting innovative applications and providing a solid foundation for future growth.
 
+**Disclaimer:** The private keys managed by Trophē are intended exclusively for use within our platform. Users are strongly advised not to use their keypairs for any external applications or services to prevent security vulnerabilities and ensure the integrity of their data within Trophē.
