@@ -24,7 +24,7 @@ Irys is the first Layer 1 (L1) programmable datachain designed to optimize both 
 To provide a seamless and user-friendly experience akin to Web2 applications, we have implemented a key management system that stores users' private keys securely. This approach eliminates the need for users to sign each interaction manually, enhancing convenience while maintaining security. However, storing private keys introduces certain responsibilities and risks, which we address through robust security measures and clear usage policies.
 
 1. **User Secret Generation:** When a user creates a new account, we generate a unique keypair for them. The keypair consists of a public key and a private key.
-   
+
 2. **Encryption and Storage:**
    
    a. **Public Key Encryption:** The public key is encrypted using the user's private key. This ensures that the public key remains secure and is only accessible to authorized processes.
@@ -44,8 +44,10 @@ To provide a seamless and user-friendly experience akin to Web2 applications, we
 4. **Data Encryption and Decryption:** 
    - **Encryption:** Data is encrypted using the user's public key. This can be performed either on the client-side or server-side, leveraging the non-sensitive nature of the public key.
    - **Decryption:** Decryption occurs on the server-side using the decrypted private key. Only the system, authenticated through the application's secret, can decrypt the data, ensuring that sensitive information remains protected.
-   
-These enhanced key management practices ensure that user keys are securely generated, stored, and managed, providing a robust defense against various security threats while maintaining the convenience expected from modern Web2 applications.
+
+It's important to note that the sole purpose of these keys is for data encryption and decryption within our platform. The public key is used to encrypt data, while the private key is used to decrypt it. We do not add funds to these wallets, and we strongly recommend that users do not add any funds or use these keys for any external applications or services. This practice ensures the security and integrity of the data within our platform.
+
+These key management practices ensure that user keys are securely generated, stored, and managed, providing a robust defense against various security threats while maintaining the convenience expected from modern Web2 applications.
 
 ### Retrieving Metadata
 
