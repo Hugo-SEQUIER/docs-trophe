@@ -3,6 +3,7 @@ slug: /
 sidebar_position: 1
 title: "Docs Home"
 hidden: false
+last_update: "2024-10-04"
 ---
 
 import ThemedImage from '@theme/ThemedImage';

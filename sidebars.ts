@@ -29,7 +29,7 @@ const sidebars: SidebarsConfig = {
       value: '<span class="sidebar-title">Technical Documentation</span>',
       className: 'sidebar-title-item',
     },
-    
+    'dataset',
   ],
 };
 

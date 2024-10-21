@@ -27,11 +27,11 @@ function useSyntheticTitle() {
   return metadata.title;
 }
 export default function DocItemContent({ children }) {
-  const { metadata } = useDoc();
+  const { metadata, frontMatter } = useDoc();
 
   const topLevel = isTopLevel(metadata?.slug);
-
   const syntheticTitle = useSyntheticTitle();
+  const lastUpdatedAt = frontMatter.last_update;
 
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}>
@@ -44,7 +44,10 @@ export default function DocItemContent({ children }) {
       )}
 
       <div className={topLevel ? styles.topLevelDoc : ""}>
-        <MetaActions style={{ ...(!topLevel && { top: 61, right: 0 }) }}/>
+        <MetaActions 
+          style={{ ...(!topLevel && { top: 61, right: 0 }) }}
+          lastUpdatedAt={lastUpdatedAt}
+        />
         <MDXContent>{children}</MDXContent>
       </div>
     </div>
@@ -56,14 +59,15 @@ function isTopLevel(str) {
 }
 
 // Sub component
-function MetaActions({ style }) {
-
+function MetaActions({ style, lastUpdatedAt }) {
   // Last updated at
-  const formattedLastUpdatedAt = new Date('10/04/2024').toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: '2-digit'
-  });
+  const formattedLastUpdatedAt = lastUpdatedAt 
+    ? new Date(lastUpdatedAt).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit'
+      })
+    : 'N/A';
 
   return (
     <div
@@ -80,13 +84,13 @@ function MetaActions({ style }) {
         ...style,
       }}>
       {/* Edit URL link */}
-        <a
-          className={styles.link}
-          href={'https://github.com/Hugo-SEQUIER/docs-trophe'}
-          target="_blank"
-          rel="noopener noreferrer">
-          SUBMIT A PR
-        </a>
+      <a
+        className={styles.link}
+        href={'https://github.com/Hugo-SEQUIER/docs-trophe'}
+        target="_blank"
+        rel="noopener noreferrer">
+        SUBMIT A PR
+      </a>
       {/* Last updated */}
       <span className={styles.lastEdit}>
         LAST EDIT : {formattedLastUpdatedAt}

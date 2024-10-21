@@ -2,6 +2,7 @@
 sidebar_position: 5
 title: "Inference"
 hidden: false
+last_update: "2024-10-04"
 ---
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
