@@ -2,7 +2,7 @@
 sidebar_position: 6
 title: "Decentralization"
 hidden: false
-last_update: "2024-10-04"
+lastUpdatedAt: "2024-10-04"
 ---
 
 # Decentralization

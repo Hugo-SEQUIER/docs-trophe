@@ -31,7 +31,7 @@ export default function DocItemContent({ children }) {
 
   const topLevel = isTopLevel(metadata?.slug);
   const syntheticTitle = useSyntheticTitle();
-  const lastUpdatedAt = frontMatter.last_update;
+  const lastUpdatedAt = frontMatter.lastUpdatedAt;
 
   return (
     <div className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}>
