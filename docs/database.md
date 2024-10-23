@@ -90,6 +90,16 @@ const response = await fetch(dataUrl);
 const transactionData = await response.json();
 ```
 
+#### Application Public Key
+
+The application public key is used to identify the application when querying the Irys network. It is the public key of the application's keypair.
+
+```json
+API: 0xfd10254d64d1f0a6491f93e889f40aaadb605db2bdffa83a5e7e563495d82708
+Chatbot: 0x67e63976696ef10f37b169f53986afc5c63c0cf1d2c30cf420ee514157c7ed2f
+Training: 0x3b68e36d4e2d07683597d96a0bf20b1115c45c8acf17e979b7cf09f1ebd4f2c8
+```
+
 By leveraging these querying capabilities, we can efficiently retrieve and manage data stored on the Irys network, enabling powerful and flexible data management in our application.
 
 ## Supabase: Open-Source Database Solution
