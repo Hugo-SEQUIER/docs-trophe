@@ -2,7 +2,7 @@
 sidebar_position: 3
 title: "Database"
 hidden: false
-lastUpdatedAt: "2024-10-04"
+lastUpdatedAt: "2024-10-23"
 ---
 
 # Database
@@ -59,9 +59,9 @@ Irys provides a powerful GraphQL API for querying transaction metadata. This all
 The basic structure of a GraphQL query to retrieve metadata looks like this:
 
 ```graphql
-query getByOwner($appPrivateKey: String!, $userPublicKey: String!) {
+query getByOwner($appPublicKey: String!, $userPublicKey: String!) {
     transactions(
-        owners: [$appPrivateKey], 
+        owners: [$appPublicKey], 
         tags: [{name: "address", values: [$userPublicKey]}]
     ) {
         edges {
@@ -74,8 +74,8 @@ query getByOwner($appPrivateKey: String!, $userPublicKey: String!) {
 ```
 
 This query does the following:
-- Filters transactions by the `appPrivateKey` (owner of the transaction)
-- Further filters by a tag with the name "address" and the value of `userPublicKey`
+- Filters transactions by the `appPublicKey` (owner of the transaction -- Us, the application)
+- Further filters by a tag with the name "address" and the value of `userPublicKey` (the user's public key)
 - Retrieves the transaction ID
 
 #### Retrieving Transaction Data
